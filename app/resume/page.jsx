@@ -198,7 +198,7 @@ const resume = () => {
                   <ul>
                     {experience.items.map((item, index) => {
                       return (
-                        <li>
+                        <li key={index}>
                           <span className="text-accent">{item.duration}</span>
                           <h3 className="text-xl max-w-[268px] min-h-[60px] text-center lg:text-left">
                             {item.position}
